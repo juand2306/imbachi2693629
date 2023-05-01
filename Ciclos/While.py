@@ -13,7 +13,7 @@ print('la suma es:',sum)
 i=0
 sp,si=0,0
 #Definimos variables
-while i<=10:
+while i<=74:
      #Indicamos que el ciclo se repita mientras que la variable no sea menor o igual a 10
     print(i)
     if i%2==0:
