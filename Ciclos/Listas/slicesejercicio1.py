@@ -29,17 +29,15 @@ print(lista)
 for j in lista: 
     if j==3.0:
         posicion=(lista.index(j)) 
-    if j==2.0:
-        unidad1=(lista.index(j))
-
-print("unidad1",unidad1)
-
+    
 
 print("El numero esta en las posiciones", posicion)
-
 aprobados=lista[posicion:]
-reprobados=lista[:posicion-1]
+reprobados=lista[:posicion] 
 print("Aprobados", aprobados)
 print("Reprobados",reprobados)
+
+
+
 
 
