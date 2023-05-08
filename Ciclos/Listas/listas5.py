@@ -20,3 +20,4 @@ for z in range(num):
     
 print(lista)
 #print(fib(z))
+
