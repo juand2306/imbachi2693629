@@ -1,7 +1,6 @@
-"""Llenar un arreglo de n elementos con números generados con la función random. No
+""" Llenar un arreglo de n elementos con números generados con la función random. No
 puede haber números repetidos. Si intenta ingresar al arreglo un número que ya existe,
 imprimirlo para anunciar que ese número ya está en el arreglo"""
-
 
 import random
 
