@@ -2,7 +2,7 @@ def numnat(x):
     suma = 0
     n = 1
 
-    while suma <= maximo:
+    while suma < maximo:
         suma=suma+n
         n=n+1
         
