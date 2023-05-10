@@ -2,6 +2,7 @@
 puede haber números repetidos. Si intenta ingresar al arreglo un número que ya existe,
 imprimirlo para anunciar que ese número ya está en el arreglo"""
 
+
 import random
 
 tam=random.randint(10,15)
