@@ -9,7 +9,7 @@ def llenarLista(tam,rango):
 l1=llenarLista(10,10)
 print("La lista es: ",l1)
 
-#b. Funcion para sumar los elementos de una suma
+#b. Funcion para sumar los elementos de una lista
 
 def sumaLista(lista):
     sum=0
