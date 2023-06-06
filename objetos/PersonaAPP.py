@@ -17,4 +17,6 @@ while c!=0:
 
 
 ob1.consultarCurso()
+ob1.modificarCurso('java', 'javascrip')
+ob1.consultarCurso()
 

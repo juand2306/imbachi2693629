@@ -27,8 +27,13 @@ class Persona:
     def consultarCurso (self):
         print (self.__cursos)
     
-    def modificarCurso (self,nombremod, cambio):
-        for i in self.__cursos:
+    #def modificarCurso (self,nombremod, cambio):
+        #for i in self.__cursos:
+           # if i == nombremod:
+                
+                
+            
+            
             
 
         
