@@ -1,7 +1,7 @@
 from Library import *
 
 class Book (Library):
-    def __init__(self, Titulo:str , Autor:str , ISBN:str , Publicacion:str , Name:str):
+    def __init__(self, Titulo, Autor , ISBN , Publicacion , Name):
         self.__titulo = [Titulo]
         self.__autor =  [Autor]
         self.__titulo_autor = {Titulo : Autor}
@@ -17,13 +17,13 @@ class Book (Library):
         if titulo in self.__titulo:
             value_autor = list(self.__titulo_autor.keys())
             value_autor_index = value_autor.index(titulo)
-            publicacion = input ("Digita la publicacion del nuevo ISBN: ")
+            publicacion = input ("Digita el nuevo ISBN: ")
             estado = "Disponible"
             del self._informacion[titulo]
             self._informacion.update({titulo : [self.__autor[value_autor_index] , isbn , publicacion , estado]})
             return self._informacion
 
-    def Obj_Libro (self,Name:str, Libro:str):
+    def Obj_Libro (self,Name, Libro):
         values = list(self._obj_titulo.values())
         for i in values:
             values = i
@@ -44,7 +44,7 @@ class Book (Library):
         self._informacion.update ({titulo : [autor, isbn, publicacion , estado]})
         Library.agregarLibro (self, isbn , titulo)
     
-    def duet (self , Titulo:str , SegAutor:str):
+    def duet (self , Titulo , SegAutor):
         values = list(self.__titulo_autor.values())
         keys = list (self.__titulo_autor.keys())
         if Titulo in keys:
@@ -53,22 +53,22 @@ class Book (Library):
             self.__titulo_autor.update ({Titulo : [values[x] , SegAutor]})
             return self.__titulo_autor
 
-    def Reservation_Status (self , titulo:str):
+    def Reservation_Status (self , titulo):
         if titulo in self.__titulo:
             print (f"El libro {titulo} esta {self.__titulo_estado[titulo]}")
 
-    def feedback (self , titulo:str):
+    def feedback (self , titulo):
         if titulo in self.__titulo:
             feed = input(f"Digta tu feedback sobre el libro {titulo}: ")
             self.__titulo_comentario.update ({titulo : feed})
             return self.__titulo_comentario
     
-    def Book_request (self , Titulo:str, Estado:str):
+    def Book_request (self , Titulo, Estado):
         if Titulo in self.__titulo:
             del self.__titulo_estado[Titulo]
             self.__titulo_estado.update({Titulo : Estado})
             return self.__titulo_estado
     
-    def renw_info (self , titulo:str):
+    def renw_info (self , titulo):
         if titulo in self.__titulo:
             print (f"La informacion del libro {titulo} es: {self._informacion[titulo]}")

@@ -1,5 +1,5 @@
 class Library :
-    def __init__(self, id:int , titulo:str):
+    def __init__(self, id, titulo):
         self.__id = id
         self.__titulo = [titulo]
 
