@@ -18,3 +18,5 @@ def operacion (funcion, numero1, numero2):
     
 operacion(suma,10,58)
 
+#Estas funciones realizan un proceso matematico simple y la funcion OPERACION utiliza una 
+#de estas funciones como parametro 
