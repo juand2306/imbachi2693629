@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db;
+    padding: 20px;
+}
+
+.header-left img {
+    max-width: 200px;
+}
+
+.header-right {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #3498db;
+}
+
+.header-right img {
+    max-width: 200px;
+}
+
+header img {
+    display: block;
+    margin: 20px auto;
+    max-width: 20x;
+    width: 100px;
+    height: 80px;
+}
+
+.hotel-info {
+    text-align: center;
+    padding: 40px;
+}
+
+.hotel-info h1 {
+    color: #3498db;
+}
+
+.hotel-info img {
+    margin: 20px;
+    max-width: 400px;
+}
+
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    margin: 5px;
+}
+
+footer img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button, .next-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    position: absolute;
+    left: 0;
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+}
